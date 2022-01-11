@@ -1,3 +1,4 @@
+#Get the result array based on guess and answer
 def scoreGuess(guess, answer):
     result = []
     for i in range(5):

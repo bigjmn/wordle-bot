@@ -3,7 +3,7 @@ from scoreguess import scoreGuess
 from makefilters import guessFilter
 from config.listconfig import makeWordleMaster
 
-
+#one random round. Guess from random available word, get result
 def randomRound(remainders, answer):
     randomguess = random.choice(remainders)
     result = scoreGuess(randomguess, answer)
@@ -11,7 +11,7 @@ def randomRound(remainders, answer):
     newRemainders = list(filter(newFilter, remainders))
     return newRemainders, (randomguess, result)
 
-
+#game loop. guess, repeat, etc
 def randomGame():
     guessHistory = []
     allWords = makeWordleMaster()
