@@ -1,3 +1,4 @@
+
 def fiveDistinct(word):
     if len(word) != 5:
         return False
